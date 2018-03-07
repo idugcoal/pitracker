@@ -5,23 +5,23 @@ class App extends Component {
 
   constructor(props) {
     super(props)
-
     this.state = {
-      data: {}
+      btc: 0,
+      eth: 0,
+      ltc: 0,
+      bch: 0,
     }
   }
-
 
   componentDidMount() {
     fetch('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,BCH&tsyms=USD')
       .then(response => response.json())
-      // .then(data => {this.setState({ data: data }))
       .then(data => {
         this.setState({
           btc: data['BTC']['USD'],
           eth: data['ETH']['USD'],
           ltc: data['LTC']['USD'],
-          bch: data['BCH']['USD']
+          bch: data['BCH']['USD'],
         })
       })
   }
