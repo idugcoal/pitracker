@@ -6,10 +6,10 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      btc: 0,
-      eth: 0,
-      ltc: 0,
-      bch: 0,
+      btc: 'Loading...',
+      eth: 'Loading...',
+      ltc: 'Loading...',
+      bch: 'Loading...',
     }
   }
 
@@ -34,19 +34,19 @@ class App extends Component {
       return (
         <div className='container'>
           <span className='btc'>
-            <div className='cash'>BTC</div>
+            <div className='currency'>BTC</div>
             <div className='price'>{this.state.btc}</div>
           </span>
           <span className='eth'>
-            <div className='cash'>ETH</div>
+            <div className='currency'>ETH</div>
             <div className='price'>{this.state.eth}</div>
           </span>
           <span className='ltc'>
-            <div className='cash'>LTC</div>
+            <div className='currency'>LTC</div>
             <div className='price'>{this.state.ltc}</div>
           </span>
           <span className='bch'>
-            <div className='cash'>BCH</div>
+            <div className='currency'>BCH</div>
             <div className='price'>{this.state.bch}</div>
           </span>
         </div>
