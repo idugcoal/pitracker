@@ -14,6 +14,10 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.timer = setInterval(() => this.getPrices(), 10000)
+  }
+
+  async getPrices() {
     fetch('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,BCH&tsyms=USD')
       .then(response => response.json())
       .then(data => {
