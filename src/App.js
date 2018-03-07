@@ -35,15 +35,15 @@ class App extends Component {
           </span>
           <span className='eth'>
             <div className='cash'>ETH</div>
-            <div className='price'>{this.state.btc}</div>
+            <div className='price'>{this.state.eth}</div>
           </span>
           <span className='ltc'>
             <div className='cash'>LTC</div>
-            <div className='price'>{this.state.btc}</div>
+            <div className='price'>{this.state.ltc}</div>
           </span>
           <span className='bch'>
             <div className='cash'>BCH</div>
-            <div className='price'>{this.state.btc}</div>
+            <div className='price'>{this.state.bch}</div>
           </span>
         </div>
       );
