@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  grid-template-rows: repeat(12, minmax(80px, 1fr));
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-areas: 
+    "btc eth"
+    "btc eth"
+    "btc eth"
+    "btc eth"
+    "btc eth"
+    "btc eth"
+    "ltc bch"
+    "ltc bch"
+    "ltc bch"
+    "ltc bch"
+    "ltc bch"
+    "ltc bch";
+}
+
+span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.btc {
+  grid-area: btc;
+  background-color: papayawhip;
+}
+
+.eth {
+  grid-area: eth;
+  background-color: dodgerblue;
+}
+
+.ltc {
+  grid-area: ltc;
+  background-color: pink;
+}
+
+.bch {
+  grid-area: bch;
+  background-color: purple;
+}
+
+.cash {
+
+}
+
+.price {
+  
+}
+
