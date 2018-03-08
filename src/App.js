@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.timer = setInterval(() => this.getPrices(), 10000)
+    this.timer = setInterval(() => this.getPrices(), 3000)
   }
 
   async getPrices() {
